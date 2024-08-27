@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Encriptador de texto">
+    <meta name="keywords" content="HTML, CSS, JavaScript, encriptar, desencriptar">
+    <meta name="author" content="Jorge Ivan Garcia Torres">
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Enlace al archivo CSS en la carpeta css -->
+</head>
+<body>
+    <header>
+        <h1>Encriptador de Texto</h1>
+        <p id="mensaje">Solo se permiten letras minúsculas y sin acentos.</p>
+    </header>
+    <div class="container">
+        <div class="input-section">
+            <h2 class="h2">Entrada de Texto</h2>
+            <input class="texto" type="text" id="texto-encriptar/desencriptar" placeholder="Ingresa el texto aquí" required>
+            <div class="buttons">
+                <button id="encriptar">Encriptar</button>
+                <button class="boton" id="desencriptar">Desencriptar</button>
+            </div>
+        </div>
+        <div class="output-section">
+            <div class="resultado-container">
+                <img src="img/Muñeco.png" alt="Candado" class="candado">
+                <p id="mensaje-no-encontrado">Ningún mensaje fue encontrado</p>
+                <p id="resultado" class="resultado">Ingresa el texto que deseas encriptar o desencriptar.</p>
+
+                <!-- Añadir un botón de copiar oculto -->
+                <button class="boton" id="copiar">Copiar</button>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <p>&copy; Proyecto Alura by Marcos Piedra</p>
+    </footer>
+
+    <script src="index.js"></script> <!-- Enlace al archivo JavaScript en la carpeta js -->
+</body>
+</html>
